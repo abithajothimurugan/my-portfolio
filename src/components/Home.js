@@ -16,9 +16,15 @@ const Home = () => {
                         Passionate about building responsive web applications using  MERN stack.                    </p>
 
                     <div className="home-buttons">
-                        <a href="/ABITHA_resume.pdf" className="btn" download>
+                        <a
+                            href={`${process.env.PUBLIC_URL}/ABITHA_resume.pdf`}
+                            className="btn"
+                            download
+                        >
                             Download Resume
                         </a>
+                    
+
 
                         <a href="#contact" className="btn btn-primary">
                             Contact Me
