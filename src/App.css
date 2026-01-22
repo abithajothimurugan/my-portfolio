@@ -36,7 +36,14 @@
 .nav-links a:hover {
   color: var(--color-hover);
 }
+.nav-links li {
+  width: 100%;
+}
 
+.nav-links a {
+  width: 100%;
+  display: block;
+}
 /* Hamburger (hidden on desktop) */
 .hamburger {
   display: none;
