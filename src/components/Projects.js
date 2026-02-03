@@ -10,7 +10,8 @@ const projects = [
             "Focused on Quiz Club, Fine Arts Club, and Self-Grooming Club",
             "Designed system to enhance competition management, data handling, and UX"
         ],
-        liveDemo: null
+        liveDemo: null,
+        github: null
     },
     {
         title: "JP Builders Mobile Application",
@@ -21,7 +22,8 @@ const projects = [
             "Enabled tracking of daily work progress, expenses, and project status",
             "Developed secure login and payment features"
         ],
-        liveDemo: null
+        liveDemo: null,
+        github: null
     },
     {
         title: "WatchTicktale Watch Website",
@@ -31,7 +33,8 @@ const projects = [
             "Users can view different watch products with hover animations",
             "Smooth browsing experience with interactive buttons"
         ],
-        liveDemo: "https://abithajothimurugan.github.io/WatchTicktale/"
+        liveDemo: "https://abithajothimurugan.github.io/WatchTicktale/",
+        github: "https://github.com/abithajothimurugan/WatchTicktale"
     }
 ];
 
@@ -54,17 +57,30 @@ const Projects = () => {
                                 <li key={i}>{point}</li>
                             ))}
                         </ul>
+                        <div className="project-buttons">
+                            {project.liveDemo && (
+                                <a
+                                    href={project.liveDemo}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-primary"
+                                >
+                                    Live Demo
+                                </a>
+                            )}
 
-                        {project.liveDemo && (
-                            <a
-                                href={project.liveDemo}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary"
-                            >
-                                Live Demo
-                            </a>
-                        )}
+                            {project.github && (
+                                <a
+                                    href={project.github}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn"
+                                >
+                                    GitHub
+                                </a>
+                            )}
+
+                        </div>
                     </div>
                 ))}
             </div>

@@ -695,7 +695,11 @@
   font-size: 0.9rem;
   transition: all 0.3s ease;
 }
-
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 .project-card .btn:hover {
   background-color: var(--color-primary);
   color: #000;
