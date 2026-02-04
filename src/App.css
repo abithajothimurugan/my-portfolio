@@ -885,3 +885,39 @@
     gap: 16px;
   }
 }
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 20px 16px;
+  text-align: center;
+  border-top: 1px solid var(--color-border);
+  background-color: var(--color-bg-light);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .footer {
+    padding: 18px 14px;
+  }
+
+  .footer-copy {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .footer {
+    padding: 16px 12px;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+}
